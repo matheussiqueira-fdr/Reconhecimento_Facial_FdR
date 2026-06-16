@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acesso Facial — Login</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <header class="topbar"><h1>Controle de Acesso Facial</h1></header>
+  <main>
+    <div class="card" style="max-width: 420px; margin: 2rem auto;">
+      <h2>Entrar</h2>
+      <p class="muted">Acesse com seu usuário do sistema.</p>
+      <form id="loginForm">
+        <label for="username">Usuário</label>
+        <input id="username" autocomplete="username" required />
+        <label for="password">Senha</label>
+        <input id="password" type="password" autocomplete="current-password" required />
+        <button type="submit">Entrar</button>
+      </form>
+      <div id="msg"></div>
+    </div>
+  </main>
+  <script type="module" src="/js/login.js"></script>
+</body>
+</html>

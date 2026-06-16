@@ -1,0 +1,9 @@
+node_modules/
+data/
+.env
+*.log
+.DS_Store
+public/models/*.bin
+public/models/*-weights_manifest.json
+!public/models/.gitkeep
+*.zip

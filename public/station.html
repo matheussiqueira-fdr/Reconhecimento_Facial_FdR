@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estação de Acesso</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/@vladmandic/face-api@1.7.13/dist/face-api.js"></script>
+</head>
+<body>
+  <header class="topbar"><h1>Controle de Acesso Facial</h1><nav></nav></header>
+  <main>
+    <div class="card">
+      <h2>Estação de acesso</h2>
+      <p class="muted">
+        Operador presente acompanha o acesso (liveness presencial). Tentativas com foto
+        impressa devem ser barradas pelo operador no próprio fluxo.
+      </p>
+      <div class="row">
+        <div>
+          <div class="video-wrap">
+            <video id="video" autoplay muted playsinline></video>
+          </div>
+        </div>
+        <div>
+          <button id="recognizeBtn" disabled>Verificar acesso</button>
+          <label style="margin-top:1rem;">
+            <input type="checkbox" id="autoMode" style="width:auto;" /> Modo contínuo (verifica a cada 2s)
+          </label>
+          <div id="result"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script type="module" src="/js/station.js"></script>
+</body>
+</html>
